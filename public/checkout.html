@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Checkout • Andrew's B&B</title>
+  <link rel="stylesheet" href="/assets/style.css"/>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <a class="brand" id="brandName" href="/">Andrew's B&B</a>
+    </header>
+
+    <div class="card">
+      <div class="h1">Checkout</div>
+      <p class="sub">This is a placeholder checkout page. Later you can connect payments + real booking.</p>
+
+      <div class="checkoutGrid">
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:12px;">
+            <div>
+              <div style="font-weight:950;font-size:22px;" id="roomTitle">Room</div>
+              <div style="color:rgba(255,255,255,.72);font-weight:800;" id="roomInfo"></div>
+            </div>
+            <div style="font-weight:950;" id="roomPrice"></div>
+          </div>
+
+          <div style="margin-top:14px;" class="calWrap">
+            <div id="checkoutCal"></div>
+
+            <div class="errorLine" id="checkoutErr"></div>
+
+            <div class="totalBox">
+              <div class="row"><span>Dates</span><span id="outDates">—</span></div>
+              <div class="row"><span>Nights</span><span id="outNights">—</span></div>
+              <div class="row"><span>Total</span><span id="outTotal">—</span></div>
+            </div>
+
+            <div class="checkoutActions">
+              <a class="btn" href="/">← Back to rooms</a>
+              <button class="btn primary" id="confirmBtn" type="button" disabled>Confirm request (demo)</button>
+            </div>
+
+            <div style="color:rgba(255,255,255,.65);margin-top:10px;font-weight:700;">
+              Clicking “Confirm request” will just show a demo message — no payment is taken.
+            </div>
+          </div>
+
+          <div class="formRow">
+            <div class="field">
+              <label>Full name</label>
+              <input id="name" placeholder="Your name"/>
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <input id="email" placeholder="you@example.com"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="contactCard">
+          <div style="font-weight:950;font-size:22px;margin-bottom:10px;">Contact</div>
+          <div style="display:flex;flex-direction:column;gap:10px;font-weight:900;">
+            <div>Email: <span style="color:rgba(255,255,255,.78)" id="contactEmail">example@example.com</span></div>
+            <div>Phone: <span style="color:rgba(255,255,255,.78)" id="contactPhone">+44 20 7946 0958</span></div>
+          </div>
+          <div style="margin-top:14px;color:rgba(255,255,255,.65);font-weight:700;">
+            You can replace these with your real details later in <b>rooms.json</b>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/checkout.js"></script>
+</body>
+</html>
