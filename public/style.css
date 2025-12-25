@@ -452,3 +452,19 @@ body{
   margin-top: 10px;
   font-weight: 800;
 }
+/* ===== Top strip: dots only ===== */
+.strip .thumb .meta .t,
+.strip .thumb .meta .p {
+  display: none !important;
+}
+
+.strip .thumb .meta {
+  justify-content: center;
+}
+
+.strip .thumb .dot {
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+}
+
