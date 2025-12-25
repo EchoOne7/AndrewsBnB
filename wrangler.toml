@@ -1,5 +1,6 @@
 name = "andrewsbnb"
 main = "src/index.js"
-compatibility_date = "2025-12-26"
+compatibility_date = "2025-12-01"
 
 assets = { directory = "public", binding = "ASSETS" }
+
