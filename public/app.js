@@ -234,7 +234,17 @@ function createCalendar(root, opts){
   });
 
   calWrap.append(top, grid);
+render();
 
+  return {
+    setMonth(iso){ state.month = parseISO(iso); render(); },
+    setSelection(startISO, endISO){
+      state.start = startISO || null;
+      state.end = endISO || null;
+      render();
+    },
+    getSelection(){ return { start: state.start, end: state.end }; }
+  };
   return {
     setMonth(iso){ state.month = parseISO(iso); render(); },
     setSelection(startISO, endISO){
@@ -460,3 +470,4 @@ async function init(){
 }
 
 init().catch(console.error);
+
