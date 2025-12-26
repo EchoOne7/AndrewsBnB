@@ -71,7 +71,7 @@ body{
   gap:18px;
   width:max-content;
   will-change: transform;
-  animation: scrollX 55s linear infinite;
+  animation: scrollX 140s linear infinite;
 }
 
 .strip:hover .track{ animation-play-state: paused; }
@@ -467,4 +467,5 @@ body{
   height: 10px;
   background: var(--accent);
 }
+
 
